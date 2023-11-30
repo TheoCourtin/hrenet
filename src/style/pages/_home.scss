@@ -1,0 +1,56 @@
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  align-items: baseline;
+  gap: 20px;
+  padding: 0 2vw;
+  height: 100vh;
+  // background: no-repeat url("/src/assets/logo.jpg");
+  background-size: auto;
+  background-position: top;
+
+  .container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &.left {
+      
+      flex-direction: column;      
+      align-items: baseline;
+      max-width: 650px;
+      margin:auto;
+    }
+
+    & .img {
+      max-width: 500px;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .hero {
+    background-size: 650px;
+    background-position: top center;
+  }
+}
+@media screen and (min-width: 960px) {
+  .hero {
+    flex-direction: row;
+    align-items: center;
+    height: calc(100vh - 150px);
+    background-position: 110% 0;
+    padding: 0 10vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero {
+    background-size: 40%;
+    background-position: 90% 0;
+  }
+}

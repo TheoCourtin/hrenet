@@ -104,11 +104,22 @@ li {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
+
+.h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.7rem;
+}
+
 .text-error {
   color: $cancel;
   font-size: 0.8rem;
   margin-top: 5px;
   text-transform: initial;
+}
+
+.h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 //Button

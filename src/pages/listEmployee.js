@@ -1,7 +1,15 @@
 import React from "react";
+import Table from "../components/table";
 
 const ListEmployee = () => {
-  return <div>ListEmployee</div>;
+  return (
+    <main className="employee-list">
+      <section>
+        <h1 className="h1">Employee List</h1>
+        <Table />
+      </section>
+    </main>
+  );
 };
 
 export default ListEmployee;

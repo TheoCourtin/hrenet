@@ -23,6 +23,9 @@ const Table = () =>
           getRowId={(row) => row.lastName}
           rows={rows}
           columns={columns}
+          autoHeight
+          hideFooterRowCount
+          responsive
           pageSize={5}
           rowsPerPageOptions={[10, 25, 50, 100]}
         />

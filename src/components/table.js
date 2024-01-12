@@ -7,10 +7,20 @@ const Table = () =>
   const employee = useSelector((state) => state.employee.employees);
 
   const [row, setRow] = useState(employee);
+  const [filter, setFilter] = useState("");
 
   useEffect(() => {
     setRow(employee);
   }, [employee]);
+
+  useEffect(() => {
+    const filteredList = employee.filter(
+      (employee) =>
+        employee.firstName.toLowerCase().includes(filter.toLowerCase()) ||
+        employee.lastName.toLowerCase().includes(filter.toLowerCase())
+    );
+    setRow(filteredList);
+  }, [employee, filter]);
 
     const columns = [
       { field: "firstName", headerName: "First Name", flex: 1 },
@@ -36,6 +46,16 @@ const Table = () =>
 
     return (
       <div style={{ height: 371, width: "100%" }}>
+        <div className="input-search-list">
+        <label>
+          <input
+            type="text"
+            placeholder="Search First Name or Last Name"
+            value={filter}
+            onChange={(e) => setFilter(e.target.value)}
+          />
+        </label>
+      </div>
       <DataGrid {...data} />
     </div>
       );

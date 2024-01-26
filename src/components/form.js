@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useDispatch, useSelector } from "react-redux";
@@ -6,8 +6,8 @@ import formSchema from "../schema/formSchema";
 import { createEmployee } from "../feature/employee.slice";
 import { states } from "../services/states";
 import { departments } from "../services/departments";
-import ComponentModalCustomAbUmd from 'component-modal-custom-ab';
-import "../../node_modules/component-modal-custom-ab/dist/style.css";
+import Modal from "test-modal-component-8";
+import "../../node_modules/test-modal-component-8/dist/modal.css";
 import approval from "../assets/approval.png";
 
 const Form = () => {
@@ -179,7 +179,7 @@ return (
       </form>
 
       {displayModal && (
-        <ComponentModalCustomAbUmd
+        <Modal
           title="Successfull"
           message="A new employee has been created to the list."
           image={approval}

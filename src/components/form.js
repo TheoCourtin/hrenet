@@ -6,9 +6,9 @@ import formSchema from "../schema/formSchema";
 import { createEmployee } from "../feature/employee.slice";
 import { states } from "../services/states";
 import { departments } from "../services/departments";
-import Modal from "test-modal-component-8";
-import "../../node_modules/test-modal-component-8/dist/modal.css";
-import approval from "../assets/approval.png";
+import Modal from "modal-component-oc-p14";
+import "../../node_modules/modal-component-oc-p14/dist/modal.css";
+import approval from "../assets/approval.webp";
 
 const Form = () => {
   const dispatch = useDispatch();

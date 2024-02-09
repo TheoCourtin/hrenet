@@ -1,12 +1,12 @@
 .create {
     position: relative;
     display: flex;
-    min-height: calc(100vh - 250px);
+    min-height: calc(1080px - 250px);
     flex-direction: column-reverse;    
     justify-content: center;
     align-items: center;
     padding: 50px 0;
-    background: url("../../assets/blob.svg") no-repeat;
+    // background: url("../../assets/blob.svg") no-repeat;
     background-size: auto;
     background-position: bottom;
   
@@ -15,7 +15,8 @@
       width: 40%;
       position: relative;
       img {
-        width: 100%;
+        // width: 100%;
+        width: 85%;
       }
     }
   
@@ -63,7 +64,7 @@
       .img-block {
         width: 300px;
         position: absolute;
-        left: 2vw; 
+        left: 66.6px; 
         top: 50%;
         transform: translate(-10%, -50%);
       }

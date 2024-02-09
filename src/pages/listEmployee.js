@@ -1,6 +1,6 @@
 import React from "react";
 import Table from "../components/table";
-import listImg from "../assets/list-employee.png";
+import listImg from "../assets/list-employee.webp";
 
 const ListEmployee = () => {
   return (

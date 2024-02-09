@@ -1,5 +1,5 @@
 import React from "react";
-import formImg from "../assets/form.png";
+import formImg from "../assets/form.webp";
 import Form from "../components/form";
 
 const CreateEmployee = () => {

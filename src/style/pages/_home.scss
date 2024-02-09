@@ -5,9 +5,9 @@
   justify-content: space-evenly;
   align-items: baseline;
   gap: 20px;
-  padding: 0 2vw;
-  height: 100vh;
-  background: no-repeat url("../../assets/blob.svg");
+  padding: 0 38.4px;
+  height: 1080px;
+  // background: no-repeat url("../../assets/blob.svg");
   background-size: auto;
   background-position: top;
 
@@ -42,9 +42,9 @@
   .hero {
     flex-direction: row;
     align-items: center;
-    height: calc(100vh - 150px);
+    height: calc(1080px - 150px);
     background-position: 110% 0;
-    padding: 0 10vw;
+    padding: 0 192px;
   }
 }
 

@@ -2,7 +2,7 @@
     position: relative;
     display: flex;    
     width: 100%;
-   min-height: calc(100vh - 150px);
+   min-height: calc(1080px - 150px);
     
     .img-wrapper {      
         display: none;
@@ -19,9 +19,9 @@
         width: auto;
         flex-direction: row;
         justify-content: space-between;
-        background: url("../../assets/blob.svg") no-repeat;
+        // background: url("../../assets/blob.svg") no-repeat;
         background-size: 70%;
-        background-position: -100% 0vh;
+        background-position: -100% 0px;
         padding: 0 50px;
     
         .img-wrapper {
@@ -42,9 +42,9 @@
     
     @media screen and (min-width: 1440px) {
       .employee-list {
-        background: url("../../assets/blob.svg") no-repeat;
+        // background: url("../../assets/blob.svg") no-repeat;
         background-size: 50%;
-        background-position: -50% -10vh;
+        background-position: -50% -108px;
         .img-wrapper {
           width: 30%;
         }

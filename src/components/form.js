@@ -42,7 +42,7 @@ const SubmitForm = (data) => {
     id: generateIdUser,
   };
   dispatch(createEmployee(employeeData));
-  console.log("Succes a new Employee was created", employeeData);
+  
   setDisplayModal(true);
   reset();
 };
